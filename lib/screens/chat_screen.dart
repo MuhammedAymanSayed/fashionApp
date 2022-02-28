@@ -3,8 +3,9 @@
 import 'package:flutter/material.dart';
 import 'package:som3a_app_28_2_22/widgets.dart/appbar.dart';
 import 'package:som3a_app_28_2_22/widgets.dart/message_widget.dart';
+import 'package:som3a_app_28_2_22/widgets.dart/my_drawer.dart';
 
-import '../models/constant.dart';
+import '../models/dummy_data.dart';
 
 class ChatScreen extends StatefulWidget {
   final String name;
@@ -28,7 +29,7 @@ class _ChatScreenState extends State<ChatScreen> {
       child: Scaffold(
         backgroundColor: Colors.blue[50],
         appBar: myAppBar('Fashion'),
-        drawer: const Drawer(),
+        drawer: const MyDrawer(),
         body: Column(
           children: [
             Align(
@@ -145,3 +146,5 @@ class _ChatScreenState extends State<ChatScreen> {
     );
   }
 }
+
+
